@@ -21,7 +21,7 @@ inquirer
       type: 'list',
       name: 'shape',
       message: 'Select a shape for the logo',
-      choices: ['circle', 'square', 'triangle'],
+      choices: ['circle', 'triangle', 'square'],
     },
 
     {
