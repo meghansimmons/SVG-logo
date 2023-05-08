@@ -31,8 +31,13 @@ inquirer
     },
 ])
 .then((answers) => {
-  const svgData = createDocument(answers);
-  fs.writeFile('logo.svg', svgData, (err) =>
-    err ? console.log(err) : console.log('Generated logo.svg')
-  );
+  const svgData = createDocument(answers); 
+  fs.writeFile('logo.svg', svgData, function(err) {
+  });
+})
+
+.then(() => console.log('Generated logo.svg'))
+.catch((err) => {
+    console.log(err);
+    console.log('Something went wrong.');
 });
