@@ -19,3 +19,7 @@ Project README for information on Triangle shap (from test example)
 and info on test code for trianle
 
 W3 for information on SVG
+
+how to use validate in inquirer
+https://geshan.com.np/blog/2023/03/inquirer-js/
+A step-by-step guide to using Inquirer.js for creating a CLI app in Node.js

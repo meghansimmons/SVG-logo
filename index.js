@@ -9,6 +9,12 @@ inquirer
       type: 'input',
       name: 'logo_text',
       message: "Enter text for the logo. (Must not be more than 3 characters.)",
+      validate: (logo_text) => {
+        if(logo_text.length > 3) {
+          return 'Must not be more than 3 characters.';
+        }
+        return true;
+      }
     },
 
     {
