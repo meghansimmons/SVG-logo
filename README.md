@@ -4,6 +4,7 @@
 create package.json by npm init -y
 npm i inquirer@8.2.4
 npm i jest
+add  ```"test": "jest"``` to scripts package.json
 
 #Usage
 ```npm install``` (to get inquirer and jest)
