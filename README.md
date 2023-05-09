@@ -3,11 +3,12 @@
 ![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
-This application generates a logo with user input and saves it as a SVG file. The application prompts the user for information about shape, color and text to be used for the logo. 
+This application generates a logo with user input and saves it as a SVG file. The application prompts the user for information about shape, color and text to be used for the logo. Three examples of logos depicting each shape with various characteristics are available in the examples folder of the repository. A video walk-thru of the creation of a sample logo.svg file can be found through this link - [video of sample logo.svg](https://drive.google.com/file/d/1evUN-WpzQge-r13iHQ1beluBNxzlbHD1/view). Please see the following screenshots of the terminal prompts as well as the generated logo.svg file.
 
-Three examples of logos depicting each shape with various characteristics are available in the examples folder of the repository. 
+<img width="439" alt="SVG Logo Maker_command line" src="https://user-images.githubusercontent.com/128755783/236984097-f11a41ad-015a-494f-8e41-fe4b2d494b65.png">
 
-A video walk-thru of the creation of a sample logo.svg file can be found through this link - [video of sample logo.svg](https://drive.google.com/file/d/1evUN-WpzQge-r13iHQ1beluBNxzlbHD1/view). Please see the following screenshots of the terminal prompts as well as the generated logo.svg file.
+<img width="162" alt="SVG logo sample" src="https://user-images.githubusercontent.com/128755783/236984103-edfd964f-dd55-4a37-b78c-a82a53408c88.png">
+
 
 ## Installation
 
