@@ -1,6 +1,8 @@
 const Shape = require('../lib/shape');
 const Triangle = require('../lib/triangle');
 
+// A test to check that the expected HTML code for a triangle with a fill color of red matches
+// the HTML code rendered from render()in file 'triangle.js'
 
 describe('Triangle', () => {
   test('should render triangle specific SVG HTML code with fill color', () => {

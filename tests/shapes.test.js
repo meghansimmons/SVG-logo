@@ -1,37 +1,40 @@
-// Import the Shape class.
-
 const Shape = require('../lib/shape');
 
-//Describe a testing suite for checking the functionality of the Validate class.
+// A testing suite for 'Shape' is created.
+  
+// A test to check that the expected HTML code for the file information matches
+// the HTML code rendered from renderFileInfo()in file 'shape.js'
+  describe('renderFileInfo()', () => {
+  test('should render render a line of HTML code', () => {
+    const expectedHtml = '<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">';
+    const fileInfo = new Shape().renderFileInfo();
+    expect(fileInfo).toEqual(expectedHtml);
 
-describe('Shape', () => {
-  // Write a test that asserts that isPassword() returns false when passed an empty string.
+  });
+});
 
-  describe('invalid', () => {
-    test('should render first line of the file information', () => {
-      const str = '';
 
-      const result = new Validate().isPassword(str);
-
-      expect(result).toEqual(false);
+  // A test to check that the expected HTML code for the text information matches
+  // the HTML code rendered from renderTextInfo()in file 'shape.js'
+  describe('renderTextInfo()', () => {
+    test('should render text with color', () => {
+      const expectedHtml = '<text x="150" y="125" font-size="60" text-anchor="middle" fill="purple">SVG</text>';
+      const shapeColor = "yellow";
+      const textColor = "purple";
+      const text = "SVG";
+      const textInfo = new Shape(shapeColor,textColor, text).renderTextInfo();
+ 
+      expect(textInfo).toEqual(expectedHtml);
     });
   });
-});
 
 
-
-const Header = require('../lib/header.js');
-const { formatDate } = require('../lib/date.js');
-
-describe('Header', () => {
-  test('should render header with the date', () => {
-    const expectedHtml = [
-      '<header class="header">',
-      '<h1>Todo Today</h1>',
-      `<p>${formatDate(new Date())}</p>`,
-      '</header>',
-    ].join('');
-    const header = new Header();
-    expect(header.render()).toEqual(expectedHtml);
+  // A test to check that the expected HTML closing svg tag matches
+  // the HTML code rendered from renderClosingTag()in file 'shape.js'
+  describe('renderClosingTag()', () => {
+    test('should render an svg closing tag', () => {
+      const expectedHtml = '</svg>';
+      const closingTag = new Shape().renderClosingTag();
+      expect(closingTag).toEqual(expectedHtml);
+    });
   });
-});

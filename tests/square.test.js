@@ -1,6 +1,8 @@
 const Shape = require('../lib/shape');
 const Square = require('../lib/square');
 
+// A test to check that the expected HTML code for a square with a fill color of blue matches
+// the HTML code rendered from render()in file 'square.js'
 
 describe('Square', () => {
   test('should render square specific SVG HTML code with fill color', () => {
